@@ -4,10 +4,8 @@
 # Each row in the file represents [x, y]
 
 # Input: x
-# Parameters:
-# 	w0 = 34.715 
-# 	w1 = -79.074
-# Output: y = w0 + w1 * x
+# Parameters: w0, w1
+# Output: y = w0 + (w1 * x)
 # Number of training examples: m
 
 import random
@@ -25,7 +23,7 @@ with open(filename, "w") as fp:
 	fp.write("x,y\n")
 	for i in range(m):
 		x = random.uniform(lower_limit, upper_limit)
-		y = w0 + w1 * x
+		y = w0 + (w1 * x)
 		fp.write("{},{}\n".format(x, y))
 
 print("*** Trainig data generated successfully ***\n")
