@@ -5,9 +5,8 @@ regression model.
 Training data filename: "training_data.csv"
 Training data path: "../data/"
 
-The model trains on the above data and outputs the parameters
-and the accuracy. The number of training cycles is controlled
-by the variable "epochs".
+The model trains on the above data and outputs the parameters and the accuracy.
+The number of training cycles is controlled by the variable "epochs".
 
 Input: x
 Parameters: w0, w1
