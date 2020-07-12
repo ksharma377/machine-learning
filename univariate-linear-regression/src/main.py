@@ -15,7 +15,7 @@ Heuristic: h(x) = w0 + (w1 * x)
 Number of training examples: m
 Batch size: b
 Learning rate: r
-Cost function = MSSE (Mean sum of squares of errors)
+Cost function = MSE (Mean squared error)
 	C(w0, w1) = (1 / 2m) sigma((h(x) - y)^2)
 Optimizer algorithm: Batch Gradient Descent
 """
