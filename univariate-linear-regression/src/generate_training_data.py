@@ -22,6 +22,7 @@ upper_limit = 100000
 print("\n*** Beginning training data generation ***\n")
 
 with open(filename, "w") as fp:
+	fp.write("x,y\n")
 	for i in range(m):
 		x = random.uniform(lower_limit, upper_limit)
 		y = w0 + w1 * x
