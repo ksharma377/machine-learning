@@ -13,9 +13,10 @@ import random
 w0 = 34.715
 w1 = -79.074
 m = 10000
-filename = "../data/training_data.csv"
 lower_limit = -100000
 upper_limit = 100000
+
+filename = "../data/training_data.csv"
 
 print("\n*** Beginning training data generation ***\n")
 
