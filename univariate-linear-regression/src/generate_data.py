@@ -1,7 +1,7 @@
 """
 This file generates the training data for univariate linear regression.
 
-Generates: "training_data.csv"
+Generates: "data.csv"
 Location: "../data/"
 Each row in the file represents [x, y]
 
@@ -22,9 +22,9 @@ upper_limit = 100000
 m = 10000
 
 # Output filename
-filename = "../data/training_data.csv"
+filename = "../data/data.csv"
 
-print("\n*** Beginning training data generation ***\n")
+print("\n*** Beginning data generation ***\n")
 
 with open(filename, "w") as fp:
 	fp.write("x,y\n")
@@ -33,4 +33,4 @@ with open(filename, "w") as fp:
 		y = w0 + (w1 * x)
 		fp.write("{},{}\n".format(x, y))
 
-print("*** Trainig data generated successfully ***\n")
+print("*** Data generated successfully ***\n")

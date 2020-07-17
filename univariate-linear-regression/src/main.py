@@ -2,8 +2,8 @@
 This is the main file which builds the univariate linear
 regression model.
 
-Training data filename: "training_data.csv"
-Training data path: "../data/"
+Data filename: "data.csv"
+Data path: "../data/"
 
 The model trains on the above data and outputs the parameters and the accuracy.
 The number of training cycles is controlled by the variable "epochs".
@@ -39,7 +39,7 @@ def initialize_parameters():
 Reads the data in csv format and splits into training and testing data (80-20)
 """
 def read_data():
-	df = pd.read_csv('../data/training_data.csv')
+	df = pd.read_csv('../data/data.csv')
 	global train_data, test_data
 	train_data, test_data = train_test_split(df, test_size = 0.2)
 
