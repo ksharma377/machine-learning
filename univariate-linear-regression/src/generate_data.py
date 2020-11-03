@@ -27,10 +27,10 @@ filename = "../data/data.csv"
 print("\n*** Beginning data generation ***\n")
 
 with open(filename, "w") as fp:
-	fp.write("x,y\n")
-	for _ in range(m):
-		x = random.uniform(lower_limit, upper_limit)
-		y = w0 + (w1 * x)
-		fp.write("{},{}\n".format(x, y))
+  fp.write("x,y\n")
+  for _ in range(m):
+    x = random.uniform(lower_limit, upper_limit)
+    y = w0 + (w1 * x)
+    fp.write("{},{}\n".format(x, y))
 
 print("*** Data generated successfully ***\n")
